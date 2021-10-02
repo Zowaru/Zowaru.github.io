@@ -9,7 +9,6 @@
     background-color: #505050;
 }
 
-
 .app{
     width: 20px;
     height: 20px;
@@ -27,4 +26,12 @@
 
 #windows{
     background-image: url("../img/windows-svgrepo-com.svg");
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
 }
