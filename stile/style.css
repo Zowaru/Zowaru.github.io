@@ -1,3 +1,5 @@
+
+
 #home{
     background-color: #1d1d1d; 
 }
@@ -9,12 +11,16 @@
     background-color: #505050;
 }
 
+
 .barrasinistra{
     width: 35px;
-    height: 700px;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
     border: black 2px solid;
     border-radius: 5px;
     background-color: #505050;
+    position: absolute;
 }
 
 .app{
@@ -34,6 +40,10 @@
 
 #windows{
     background-image: url("../img/windows-svgrepo-com.svg");
+}
+
+#index{
+    background-image: url("../img/home-svgrepo-com.svg");
 }
 
 a:link {
