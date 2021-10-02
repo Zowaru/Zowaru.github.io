@@ -22,6 +22,34 @@
     position: absolute;
 }
 
+.barrascarica{
+    border: solid 2px black;
+    width: 157px;
+    margin-top: 58px;
+    border-radius: 5px;
+}
+
+#scaricaphotoshop{
+    text-align: center;
+    background-color: #a5a58d;
+    cursor: pointer;
+}
+
+.appawindows{
+    display: inline-block;
+}
+
+#photoshop{
+    border: black 2px solid;
+    width: 160px;
+    height: 80px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-image: url("../img/photoshop-full-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .app{
     width: 25px;
     height: 25px;
