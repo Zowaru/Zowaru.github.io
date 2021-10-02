@@ -1,0 +1,30 @@
+#home{
+    background-color: #1d1d1d; 
+}
+#barra{
+    width: 1910x;
+    height: 30px;
+    border: black 2px solid;
+    border-radius: 5px;
+    background-color: #505050;
+}
+
+
+.app{
+    width: 20px;
+    height: 20px;
+    border: black 2px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#android{
+    background-image: url("../img/android-svgrepo-com.svg");
+}
+
+#windows{
+    background-image: url("../img/windows-svgrepo-com.svg");
+}

@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px){
+    #barralateralesinistra, #barraorizzondatesopra, #home{
+        float: none;
+        display: block;
+        width: 85%;
+        padding: 15px;
+        border-right: none;
+    }
+}
