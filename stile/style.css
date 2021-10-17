@@ -3,6 +3,9 @@
     background-color: #121212; 
     color: #f2f2f2;
     font-family: 'Poppins',sans-serif; 
+    width: 52em;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .carte{

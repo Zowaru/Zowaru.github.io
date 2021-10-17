@@ -1,9 +1,0 @@
-@media screen and (max-width: 768px){
-    #home, #tabellaOrario{
-        float: none;
-        display: block;
-        width: 85%;
-        padding: 15px;
-        border-right: none;
-    }
-}
