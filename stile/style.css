@@ -6,6 +6,7 @@
     width: 52em;
     overflow-x: scroll;
     overflow-y: hidden;
+    user-select: none;
 }
 
 .carte{
