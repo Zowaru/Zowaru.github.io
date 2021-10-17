@@ -1,80 +1,9 @@
 
-
 #home{
     background-color: #1d1d1d; 
 }
-#barra{
-    width: 100%;
-    border: black 2px solid;
-    border-radius: 5px;
-    background-color: #505050;
-}
-
-
-.barrasinistra{
-    width: 35px;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    border: black 2px solid;
-    border-radius: 5px;
-    background-color: #505050;
-    position: absolute;
-}
-
-.barrascarica{
-    border: solid 2px black;
-    width: 150px;
-    margin-top: 58px;
-    border-radius: 2px;
-}
-
-#scaricaphotoshop{
-    text-align: center;
-    background-color: #a5a58d;
-    cursor: pointer;
-}
-
-.appawindows{
-    display: inline-block;
-}
-
-#photoshop{
-    border: black 2px solid;
-    width: auto;
-    height: auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    background-color: #505050;
-    background-image: url("../img/photoshop-full-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.app{
-    width: 25px;
-    height: 25px;
-    margin-top: 6px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-#android{
-    background-image: url("../img/android-svgrepo-com.svg");
-}
-
-#windows{
-    background-image: url("../img/windows-svgrepo-com.svg");
-}
-
-#index{
-    background-image: url("../img/home-svgrepo-com.svg");
-}
-
-a:link {
-    text-decoration: none;
-}
-  
-a:visited {
-    text-decoration: none;
+#tabellaOrario, th, td{
+    color: white;
+    border: white 1px solid;
+    margin-left: 40%;
 }
