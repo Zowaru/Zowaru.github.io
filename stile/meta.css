@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px){
-    #home{
+    #home, #tabellaOrario{
         float: none;
         display: block;
         width: 85%;
