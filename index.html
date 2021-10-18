@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="IT" translate="no>
         <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
         <meta name="author" content="Zowaru#7652">
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./stile/meta.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./stile/style.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="./img/clock.ico">
     </head>
+
     <body id="home">
-        <div id="orario" class="carte">
-            <br>
-            <br>
-            1°
-            <br>
-            2°
-            <br>
-            3°
-            <br>
-            4°
-            <br>
-            5°
-            <br>
-            6°
-            <br>
-            7°
-            <br>
-        </div>
-        <div class="carte">
-            lunedí
-            <br>
-            <br>
-            Italiano
-            <br>
-            Matematica
-            <br>
-            Italiano
-            <br>
-            inglese
-            <br>
-            Tps
-            <br>
-            Sistemi
-            <br>
-            <br>
-        </div>
-        <div class="carte">
-            Martedí
-            <br>
-            <br>
-            Matematica
-            <br>
-            Sistemi
-            <br>
-            Tps
-            <br>
-            Informatica
-            <br>
-            Religione
-            <br>
-            Storia
-            <br>
-            Sistemi
-        </div>
-        <div class="carte">
-            Mercoledí
-            <br>
-            <br>
-            Ed.Fisica
-            <br>
-            Informatica
-            <br>
-            Informatica
-            <br>
-            inglese
-            <br>
-            Telecomunicazioni
-            <br>
-            Italiano
-            <br>
-            <br>
-        </div>
-        <div class="carte">
-            Giovedí
-            <br>
-            <br>
-            Informatica
-            <br>
-            Inglese
-            <br>
-            Storia
-            <br>
-            Informatica
-            <br>
-            Tps
-            <br>
-            Telecomunicazioni
-            <br>
-            Matematica
-        </div>
-        <div class="carte">
-            Venerdí
-            <br>
-            <br>
-            Matematica
-            <br>
-            Telecomunicazioni
-            <br>
-            Informatica
-            <br>
-            Sistemi
-            <br>
-            Ed.Fisica
-            <br>
-            Italiano
-            <br>
-            <br>
-        </div>
+        <center>
+
+            
+            <div id="orario" class="carte"> 
+                <center>
+                    <img src="./img/clock.png" height="50px">
+                    <br>
+                    1°
+                    <br>
+                    2°
+                    <br>
+                    3°
+                    <br>
+                    4°
+                    <br>
+                    5°
+                    <br>
+                    6°
+                    <br>
+                    7°
+                </center>
+            </div>
+
+
+            <div class="carte">
+                <i id="Giorno"> Clicca un bottone </i>
+                <hr>
+                <i id="Prima">  </i>
+                <br>
+                <i id="Seconda">  </i>
+                <br>
+                <i id="Terza">  </i>
+                <br>
+                <i id="Quarta">  </i>
+                <br>
+                <i id="Quinta">  </i>
+                <br>
+                <i id="Sesta">  </i>
+                <br>
+                <i id="Settima">  </i>
+                <br>
+            </div>
+
+        </center>
+        
+
+            <div id="contenitoreBottoni">
+                <center>
+                    <button onclick="cambia('Lunedí')"> Lunedì </button>
+                    <button onclick="cambia('Martedí')"> Martedì </button>
+                    <button onclick="cambia('Mercoledí')"> Mercoledì </button>
+                    <button onclick="cambia('Giovedí')"> Giovedì </button>
+                    <button onclick="cambia('Venerdí')"> Venerdì </button>
+                </center>
+            </div>
+
+        <script>
+
+            orario = {
+                'Lunedí' : {
+                    1:'Italiano',
+                    2:'Matematica',
+                    3:'Italiano',
+                    4:'Inglese',
+                    5:'Tps',
+                    6:'Sistemi',
+                    7:'-',
+                },
+                'Martedí' : {
+                    1:'Matematica',
+                    2:'Sistemi',
+                    3:'Tps',
+                    4:'Informatica',
+                    5:'Religione',
+                    6:'Stori',
+                    7:'Sistemi',
+                },
+                'Mercoledí' : {
+                    1:'Ed.Fisica',
+                    2:'Informatica',
+                    3:'Informatica',
+                    4:'Inglese',
+                    5:'Telecomunicazioni',
+                    6:'Italiano',
+                    7:'-',
+                },
+                'Giovedí' : {
+                    1:'Informatica',
+                    2:'Inglese',
+                    3:'Storia',
+                    4:'Informatica',
+                    5:'Tps',
+                    6:'Telecomunicazioni',
+                    7:'Matematica',
+                },
+                'Venerdí' : {
+                    1:'Matematica',
+                    2:'Telecomunicazioni',
+                    3:'Informatica',
+                    4:'Sistemi',
+                    5:'Ed.Fisica',
+                    6:'italiano',
+                    7:'-',
+                },
+            };
+
+
+            function cambia(giorno) 
+            {
+                document.getElementById('Giorno').innerText = giorno;
+
+                document.getElementById('Prima').innerText = orario[giorno][1];
+                document.getElementById('Seconda').innerText = orario[giorno][2];
+                document.getElementById('Terza').innerText = orario[giorno][3];
+                document.getElementById('Quarta').innerText = orario[giorno][4];
+                document.getElementById('Quinta').innerText = orario[giorno][5];
+                document.getElementById('Sesta').innerText = orario[giorno][6];
+                document.getElementById('Settima').innerHTML = orario[giorno][7];
+            }
+
+            
+        </script>
     </body>
 </html>

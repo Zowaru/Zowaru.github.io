@@ -3,10 +3,19 @@
     background-color: #121212; 
     color: #f2f2f2;
     font-family: 'Poppins',sans-serif; 
-    width: 52em;
-    overflow-x: scroll;
-    overflow-y: hidden;
     user-select: none;
+}
+#home > center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 4em));
+}
+
+hr {
+    border: 0;
+    height: calc(0.6em - 2px);
+    border-top: 2px solid #f2f2f288;
 }
 
 .carte{
@@ -16,4 +25,37 @@
     padding: 0.75em;
     border-radius: 10px;
     vertical-align: top;
+}
+
+#orario img {
+    height: 2.7em;
+    aspect-ratio: 1/1;
+
+    filter: invert(1);
+}
+
+button {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2;
+    padding: 0.5rem;
+}
+button:active {
+    background-color: #212121;
+}
+
+
+#contenitoreBottoni {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+
+    background-color: #212121;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
