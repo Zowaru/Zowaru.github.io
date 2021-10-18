@@ -9,6 +9,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    /* overflow-x: auto; */
     transform: translate(-50%, calc(-50% - 4em));
 }
 
@@ -25,6 +26,10 @@ hr {
     padding: 0.75em;
     border-radius: 10px;
     vertical-align: top;
+}
+
+#orario{
+    width: 3em;
 }
 
 #orario img {
