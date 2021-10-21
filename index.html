@@ -5,13 +5,13 @@
         <meta name="google" content="notranslate">
         <meta name="author" content="Zowaru#7652">
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./stile/style.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="./img/clock.ico">
     </head>
 
     <body id="home">
-        <center>
+        <center id="container">
 
             
             <div id="orario" class="carte"> 
@@ -35,7 +35,7 @@
             </div>
 
 
-            <div  class="carte">
+            <div id="giorno" class="carte">
                 <i id="Giorno"> Clicca un bottone </i>
                 <hr>
                 <i id="Prima">  </i>
@@ -129,6 +129,14 @@
                 document.getElementById('Quinta').innerText = orario[giorno][5];
                 document.getElementById('Sesta').innerText = orario[giorno][6];
                 document.getElementById('Settima').innerHTML = orario[giorno][7];
+            }
+
+
+            window.onload = function() {
+                cambia('Lunedí');
+
+                document.getElementById('contenitoreBottoni').style.bottom = '0';
+                document.getElementById('container').style.bottom = '2rem';
             }
 
             
