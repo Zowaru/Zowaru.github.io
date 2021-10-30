@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head lang="IT" translate="no">
+        <meta name="google" content="notranslate">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interrogazioni</title>
+        <link rel="stylesheet" href="/stile/style.css">
+    </head>
+    <body>
+        <center id="container">
+            <div class="carte"> 
+                <center>
+                    <div style="font-weight: 600;" id="materia"></div>
+                    <div style="font-size: 0.75em;" id="data"></div>
+                    <div style="font-size: 0.5em;" id="argomento"></div>
+                    <div id="interrogati"></div>
+                </center>
+            </div>
+
+        </center>
+
+
+        <div id="contenitoreBottoni">
+            <center>
+                <button onclick="compilaDati(italiano)"> Italiano </button>
+                <button onclick="compilaDati(storia)"> Storia </button>
+                <button onclick="compilaDati(telecomunicazioni)"> Telecomunicazioni </button>
+            </center>
+        </div>
+
+        <div id="linkBottoni">
+            <label style="font-size: 0.8rem">Vedi l'</label><a href="/">orario</a>
+        </div>
+
+
+        <script src="./interrogazioni.js"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>

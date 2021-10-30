@@ -5,7 +5,22 @@
     font-weight: 550;
 }
 
-#home{
+::-webkit-scrollbar {
+    color: chartreuse;
+    background-color: transparent;
+    width: 10px;
+    height: 0;
+    border-radius: 1em;
+}
+::-webkit-scrollbar-corner {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 1em;
+}
+
+body {
     background-color: #121212; 
     color: #f2f2f2;
     user-select: none;
@@ -13,18 +28,23 @@
     margin: 0;
 }
 @media screen and (min-aspect-ratio: 1135/978) {
-    #home {
-        font-size: 5vh;
+    body {
+        font-size: 5vh!important;
     }
     
 }
-#home > #container {
+body > #container {
     position: absolute;
     height: 100%;
     width: 100%;
 
     bottom: 100%;
-    transition:cubic-bezier(0,1.03,.56,.96) 1s;
+    transition:cubic-bezier(0,1.03,.56,.96) 0.5s;
+}
+#container > .carte {
+    /* max-height: 14em;
+    overflow-x: scroll; */
+    margin-top: 2em;
 }
 
 hr {
@@ -44,11 +64,6 @@ hr {
 }
 
 #orario{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(calc(-50% - 5.25em), -50%);
-
     width: 3em;
 }
 #orario img {
@@ -58,14 +73,6 @@ hr {
     filter: invert(1);
 }
 
-#giorno {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(calc(-50% + 3em), -50%);
-}
-
-
 
 #contenitoreBottoni {
     position: fixed;
@@ -74,7 +81,9 @@ hr {
     right: 0;
     padding: 0.5rem;
     font-size: 1rem;
-    transition: 1s;
+    transition: 0.5s;
+    z-index: 9;
+    box-shadow: black 0 0 10px -4px;
 
     background-color: #212121;
     border-top-left-radius: 15px;
@@ -97,6 +106,29 @@ button:active {
     background-color: #181818;
 }
 
+
+#linkBottoni {
+    z-index: 8;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    transition: 1s;
+    box-shadow: black 0 0 10px -4px;
+
+    text-align: center;
+    vertical-align: top;
+
+    background-color: #242424;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#linkBottoni > a {
+    font-size: 0.8rem;
+    color: #f2f2f2!important;
+}
 
 /* CREATE BY ZOWARU,ZANZIGU, MARESCIALLO */
 /* SUPPORT MORAL KIWI */
