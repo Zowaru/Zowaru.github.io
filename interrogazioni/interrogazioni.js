@@ -66,7 +66,7 @@ gruppi_telecomunicazioni = [
 italiano = {
     'materia':'Italiano',
     'data':'8 Novembre',
-    'argomento':'Galilei - De Servantes',
+    'argomento':'Galilei - Ignazzi',
     'gruppo':gruppi_italiano[2],
 }
 
