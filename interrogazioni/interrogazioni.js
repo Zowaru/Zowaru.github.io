@@ -23,7 +23,7 @@ gruppi_storia = [
         'D\'Onghia','Lucarella','Perrini','Palmisano D.'
     ],
     [
-        'Amato','D\'Aria','Colella','Mocchi','Esposito', 'Davide.D'
+        'Amato','D\'Aria','Colella','Mocchi','Esposito', 'D\'Onghia'
     ],
     [
         'Rizzo','Di Bari','Pappadá','Palmisano V.'
