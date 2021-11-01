@@ -126,19 +126,32 @@
 
             function cambia(giorno) 
             {
-                document.getElementById('Giorno').innerText = giorno;
+                animazioneContainer()
 
-                document.getElementById('Prima').innerText = orario[giorno][1];
-                document.getElementById('Seconda').innerText = orario[giorno][2];
-                document.getElementById('Terza').innerText = orario[giorno][3];
-                document.getElementById('Quarta').innerText = orario[giorno][4];
-                document.getElementById('Quinta').innerText = orario[giorno][5];
-                document.getElementById('Sesta').innerText = orario[giorno][6];
-                document.getElementById('Settima').innerHTML = orario[giorno][7];
+                setTimeout(() => {
+                    document.getElementById('Giorno').innerText = giorno;
+
+                    document.getElementById('Prima').innerText = orario[giorno][1];
+                    document.getElementById('Seconda').innerText = orario[giorno][2];
+                    document.getElementById('Terza').innerText = orario[giorno][3];
+                    document.getElementById('Quarta').innerText = orario[giorno][4];
+                    document.getElementById('Quinta').innerText = orario[giorno][5];
+                    document.getElementById('Sesta').innerText = orario[giorno][6];
+                    document.getElementById('Settima').innerHTML = orario[giorno][7];
+                }, 500);
             }
 
+            
+            // cambia(Lunedi)
+                document.getElementById('Giorno').innerText = 'Lunedí';
 
-            cambia('Lunedí');
+                document.getElementById('Prima').innerText = orario['Lunedí'][1];
+                document.getElementById('Seconda').innerText = orario['Lunedí'][2];
+                document.getElementById('Terza').innerText = orario['Lunedí'][3];
+                document.getElementById('Quarta').innerText = orario['Lunedí'][4];
+                document.getElementById('Quinta').innerText = orario['Lunedí'][5];
+                document.getElementById('Sesta').innerText = orario['Lunedí'][6];
+                document.getElementById('Settima').innerHTML = orario['Lunedí'][7];
 
             // CREATE BY ZOWARU,ZANZIGU,MARESCIALLO
             // SUPPORT MORAL KIWI

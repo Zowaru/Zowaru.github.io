@@ -87,16 +87,29 @@ telecomunicazioni = {
 
 //
 
-compilaDati(italiano);
+document.getElementById('materia').innerText = italiano['materia'];
+document.getElementById('data').innerText = italiano['data'];
+document.getElementById('argomento').innerText = italiano['argomento'];
+
+document.getElementById('interrogati').innerText = "";
+italiano['gruppo'].forEach(alunno => {
+    document.getElementById('interrogati').innerText += "\n" + alunno;
+});
+
 
 function compilaDati(interrogati)
 {
-    document.getElementById('materia').innerText = interrogati['materia'];
-    document.getElementById('data').innerText = interrogati['data'];
-    document.getElementById('argomento').innerText = interrogati['argomento'];
+    animazioneContainer();
 
-    document.getElementById('interrogati').innerText = "";
-    interrogati['gruppo'].forEach(alunno => {
-        document.getElementById('interrogati').innerText += "\n" + alunno;
-    });
+    setTimeout(() => {
+        document.getElementById('materia').innerText = interrogati['materia'];
+        document.getElementById('data').innerText = interrogati['data'];
+        document.getElementById('argomento').innerText = interrogati['argomento'];
+
+        document.getElementById('interrogati').innerText = "";
+        interrogati['gruppo'].forEach(alunno => {
+            document.getElementById('interrogati').innerText += "\n" + alunno;
+        });
+    }, 500);
+    
 }
