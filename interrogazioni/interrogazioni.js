@@ -79,7 +79,7 @@ storia = {
 
 telecomunicazioni = {
     'materia':'Telecomunicazioni',
-    'data':'5 Novembre',
+    'data':'10 Novembre',
     'argomento':'',
     'gruppo':gruppi_telecomunicazioni[2],
 }
