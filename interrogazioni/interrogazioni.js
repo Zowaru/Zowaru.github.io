@@ -81,7 +81,7 @@ telecomunicazioni = {
     'materia':'Telecomunicazioni',
     'data':'5 Novembre',
     'argomento':'',
-    'gruppo':gruppi_telecomunicazioni[1],
+    'gruppo':gruppi_telecomunicazioni[2],
 }
 
 
