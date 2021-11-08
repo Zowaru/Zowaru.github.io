@@ -65,9 +65,9 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'data':'8 Novembre',
-    'argomento':'Galilei - Ignazzi',
-    'gruppo':gruppi_italiano[2],
+    'data':'Da stabilire',
+    'argomento':'Da stabilire',
+    'gruppo':gruppi_italiano[3],
 }
 
 storia = {
