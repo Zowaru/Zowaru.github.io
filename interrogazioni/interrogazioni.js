@@ -65,16 +65,16 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'data':'17 Novembre',
+    'data':'22 Novembre',
     'argomento':'Galillei, Ignazzi',
-    'gruppo':gruppi_italiano[3],
+    'gruppo':gruppi_italiano[0],
 }
 
 storia = {
     'materia':'Storia',
     'data':'18 Novembre',
     'argomento':'Capitolo 3',
-    'gruppo':gruppi_storia[3],
+    'gruppo':gruppi_storia[0],
 }
 
 telecomunicazioni = {
