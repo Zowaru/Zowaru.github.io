@@ -23,7 +23,7 @@ gruppi_storia = [
         'D\'Onghia','Lucarella','Perrini','Palmisano D.'
     ],
     [
-        'Amato','D\'Aria','Colella','Mocchi','Esposito', 'D\'Onghia'
+        'Amato','D\'Aria','Colella','Mocchi','Esposito', 
     ],
     [
         'Rizzo','Di Bari','Pappadá','Palmisano V.'
@@ -65,23 +65,23 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'data':'Da stabilire',
-    'argomento':'Da stabilire',
-    'gruppo':gruppi_italiano[3],
+    'data':'22 Novembre',
+    'argomento':'Galillei, Ignazzi',
+    'gruppo':gruppi_italiano[0],
 }
 
 storia = {
     'materia':'Storia',
-    'data':'10 Novembre',
+    'data':'18 Novembre',
     'argomento':'Capitolo 3',
-    'gruppo':gruppi_storia[2],
+    'gruppo':gruppi_storia[0],
 }
 
 telecomunicazioni = {
     'materia':'Telecomunicazioni',
-    'data':'10 Novembre',
+    'data':'18 Novembre',
     'argomento':'',
-    'gruppo':gruppi_telecomunicazioni[2],
+    'gruppo':gruppi_telecomunicazioni[4],
 }
 
 
@@ -110,6 +110,5 @@ function compilaDati(interrogati)
         interrogati['gruppo'].forEach(alunno => {
             document.getElementById('interrogati').innerText += "\n" + alunno;
         });
-    }, 500);
-    
+    }, 500); 
 }
