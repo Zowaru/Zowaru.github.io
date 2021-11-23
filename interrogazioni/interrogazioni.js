@@ -72,8 +72,8 @@ italiano = {
 
 storia = {
     'materia':'Storia',
-    'data':'18 Novembre',
-    'argomento':'Capitolo 3',
+    'data':'-',
+    'argomento':'Capitolo 4 - Capitolo 5',
     'gruppo':gruppi_storia[0],
 }
 
