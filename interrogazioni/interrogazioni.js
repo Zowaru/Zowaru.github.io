@@ -2,7 +2,7 @@
 
 gruppi_italiano = [
     [
-        'Amato','D\'Aria','Colella','Mocchi','Esposito'
+        'Amato','Colella','Mocchi','Esposito'
     ],
     [
         'Rizzo','Di Bari','Pappadá','Palmisano V.'
@@ -11,7 +11,7 @@ gruppi_italiano = [
         'Pagliarulo','Moro','Dinapoli','Masciandare'
     ],
     [
-        'D\'Onghia','Lucarella','Perrini','Palmisano D.'
+        'D\'Onghia','Lucarella','Perrini','D\'Aria'
     ]
 ];
 
@@ -20,7 +20,7 @@ gruppi_storia = [
         'Pagliarulo','Moro','Dinapoli','Masciandare'
     ],
     [
-        'D\'Onghia','Lucarella','Perrini','Palmisano D.'
+        'D\'Onghia','Lucarella','Perrini','D\'Aria'
     ],
     [
         'Amato','D\'Aria','Colella','Mocchi','Esposito', 
@@ -44,7 +44,7 @@ gruppi_telecomunicazioni = [
         'Pagliarulo','Masciandare'
     ],
     [
-        'Perrini','Palmisano D.'
+        'Perrini','amato'
     ],
     [
         'Lucarella','D\'Onghia'
@@ -54,9 +54,6 @@ gruppi_telecomunicazioni = [
     ],
     [
         'D\'Aria','Esposito'
-    ],
-    [
-        'Amato'
     ]
 ];
 
