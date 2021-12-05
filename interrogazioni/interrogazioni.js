@@ -62,23 +62,23 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'data':'-',
+    'data':'6 Dicembre',
     'argomento':'Shakespeare - Ignazzi',
-    'gruppo':gruppi_italiano[0],
+    'gruppo':gruppi_italiano[1],
 }
 
 storia = {
     'materia':'Storia',
-    'data':'-',
+    'data':'9 Dicembre',
     'argomento':'Capitolo 4 - Capitolo 5',
-    'gruppo':gruppi_storia[0],
+    'gruppo':gruppi_storia[1],
 }
 
 telecomunicazioni = {
     'materia':'Telecomunicazioni',
-    'data':'18 Novembre',
+    'data':'-',
     'argomento':'',
-    'gruppo':gruppi_telecomunicazioni[4],
+    'gruppo':gruppi_telecomunicazioni[6],
 }
 
 
