@@ -69,9 +69,9 @@ italiano = {
 
 storia = {
     'materia':'Storia',
-    'data':'9 Dicembre',
+    'data':'16 Dicembre',
     'argomento':'Capitolo 4 - Capitolo 5',
-    'gruppo':gruppi_storia[1],
+    'gruppo':gruppi_storia[2],
 }
 
 telecomunicazioni = {
