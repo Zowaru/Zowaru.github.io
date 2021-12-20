@@ -89,7 +89,7 @@ function compilaDati(interrogati, animazione=true)
         {
             document.getElementById('materia').innerText = interrogati['materia'];
             document.getElementById('data').innerText = 'Non aggiornato!';
-            document.getElementById('interrogati').innerHTML = '<h6>Dati mancanti. ' + '<br>' +'Se credi sia un problema, rompi le palle a Perry o ' + '<br>' +'a Colella.</h6>';
+            document.getElementById('interrogati').innerHTML = '<h6>Dati mancanti. ' + '<br>' +'Se credi sia un problema, rompi le palle a Perrini o ' + '<br>' +'a Colella.</h6>';
         }
         else
         {
