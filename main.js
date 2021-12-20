@@ -1,5 +1,19 @@
 // questo file verrà eseguito su TUTTE le pagine
 
+// SW
+if ('serviceWorker' in navigator) 
+{
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+}
+
 // posizionamento iniziale componenti
 document.getElementById('contenitoreBottoni').style.bottom = '0';
 document.getElementById('linkBottoni').style.bottom = '3.1em';
