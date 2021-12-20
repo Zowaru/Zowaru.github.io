@@ -39,7 +39,7 @@ body > #container {
     width: 100%;
 
     bottom: 100%;
-    transition:cubic-bezier(0.1,1,0.2,1) 0.5s;
+    transition: cubic-bezier(1, 0, 0, 1) 0.25s;
 }
 #container > .carte {
     /* max-height: 14em;
@@ -50,7 +50,7 @@ body > #container {
 hr {
     border: 0;
     height: calc(0.6em - 2px);
-    border-top: 2px solid #f2f2f288;
+    border-top: 1px solid #f2f2f244;
 }
 
 
@@ -136,6 +136,7 @@ hr {
     font-size: 0.8rem;
     color: #f2f2f2!important;
 }
+
 
 /* CREATE BY ZOWARU,ZANZIGU, MARESCIALLO */
 /* SUPPORT MORAL KIWI */

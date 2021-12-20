@@ -40,7 +40,7 @@
 
 
             <div id="giorno" class="carte">
-                <i id="Giorno"> Clicca un bottone </i>
+                <i id="Giorno"> Caricamento... </i>
                 <hr>
                 <i id="Prima">  </i>
                 <br>
@@ -61,22 +61,22 @@
         </center>
         
 
-            <div id="contenitoreBottoni">
-                <center>
-                    <button onclick="cambia('Lunedí')"> Lunedì </button>
-                    <button onclick="cambia('Martedí')"> Martedì </button>
-                    <button onclick="cambia('Mercoledí')"> Mercoledì </button>
-                    <button onclick="cambia('Giovedí')"> Giovedì </button>
-                    <button onclick="cambia('Venerdí')"> Venerdì </button>
-                </center>
-            </div>
-            <div id="linkBottoni">
-                <label style="font-size: 0.8rem">Vedi anche le </label> 
-                <a href="/interrogazioni">interrogazioni</a>
-            </div>
+        <div id="contenitoreBottoni">
+            <center>
+                <button onclick="cambia('Lunedí')"> Lunedì </button>
+                <button onclick="cambia('Martedí')"> Martedì </button>
+                <button onclick="cambia('Mercoledí')"> Mercoledì </button>
+                <button onclick="cambia('Giovedí')"> Giovedì </button>
+                <button onclick="cambia('Venerdí')"> Venerdì </button>
+            </center>
+        </div>
+        
+        <div id="linkBottoni">
+            <label style="font-size: 0.8rem">Vedi anche le </label> 
+            <a href="/interrogazioni">interrogazioni</a>
+        </div>
 
         <script>
-
             orario = {
                 'Lunedí' : {
                     1:'Matematica',
@@ -126,9 +126,10 @@
             };
 
 
-            function cambia(giorno) 
+            function cambia(giorno, animazione=true) 
             {
-                animazioneContainer()
+                if (animazione)
+                    animazioneContainer();
 
                 setTimeout(() => {
                     document.getElementById('Giorno').innerText = giorno;
@@ -140,25 +141,45 @@
                     document.getElementById('Quinta').innerText = orario[giorno][5];
                     document.getElementById('Sesta').innerText = orario[giorno][6];
                     document.getElementById('Settima').innerHTML = orario[giorno][7];
-                }, 500);
+                }, 250);
             }
 
             
-            // cambia(Lunedi)
-                document.getElementById('Giorno').innerText = 'Lunedí';
+            //cambia('Lunedí', false)
+                // document.getElementById('Giorno').innerText = 'Lunedí';
 
-                document.getElementById('Prima').innerText = orario['Lunedí'][1];
-                document.getElementById('Seconda').innerText = orario['Lunedí'][2];
-                document.getElementById('Terza').innerText = orario['Lunedí'][3];
-                document.getElementById('Quarta').innerText = orario['Lunedí'][4];
-                document.getElementById('Quinta').innerText = orario['Lunedí'][5];
-                document.getElementById('Sesta').innerText = orario['Lunedí'][6];
-                document.getElementById('Settima').innerHTML = orario['Lunedí'][7];
+                // document.getElementById('Prima').innerText = orario['Lunedí'][1];
+                // document.getElementById('Seconda').innerText = orario['Lunedí'][2];
+                // document.getElementById('Terza').innerText = orario['Lunedí'][3];
+                // document.getElementById('Quarta').innerText = orario['Lunedí'][4];
+                // document.getElementById('Quinta').innerText = orario['Lunedí'][5];
+                // document.getElementById('Sesta').innerText = orario['Lunedí'][6];
+                // document.getElementById('Settima').innerHTML = orario['Lunedí'][7];
 
             // CREATE BY ZOWARU,ZANZIGU,MARESCIALLO
             // SUPPORT MORAL KIWI
         </script>
 
         <script src="/main.js"></script>
+
+        <script>
+            var data = new Date();
+
+            let pomeriggio = 0
+            if (data.getHours() > 13)
+            {
+                pomeriggio = 1
+            }
+
+            let giorno = giornoSettimana(data.getDay() + pomeriggio);
+            if (giorno == 'Sabato' || giorno == 'Domenica' || giorno == 'Errore')
+            {
+                giorno = 'Lunedí';
+            }
+            
+            cambia(giorno, false)
+        </script>
+
     </body>
+
 </html>

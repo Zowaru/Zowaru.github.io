@@ -5,28 +5,13 @@ gruppi_italiano = [
         'Amato','Colella','Mocchi','Esposito'
     ],
     [
-        'Rizzo','Di Bari','Pappadá','Palmisano V.'
+        'Rizzo','Di Bari','Pappadá','Palmisano'
     ],
     [
         'Pagliarulo','Moro','Dinapoli','Masciandare'
     ],
     [
         'D\'Onghia','Lucarella','Perrini','D\'Aria'
-    ]
-];
-
-gruppi_storia = [
-    [
-        'Pagliarulo','Moro','Dinapoli','Masciandare'
-    ],
-    [
-        'D\'Onghia','Lucarella','Perrini','D\'Aria'
-    ],
-    [
-        'Amato','D\'Aria','Colella','Mocchi','Esposito', 
-    ],
-    [
-        'Rizzo','Di Bari','Pappadá','Palmisano V.'
     ]
 ];
 
@@ -62,21 +47,24 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'data':'13 Dicembre',
-    'argomento':'Shakespeare - Ignazzi',
-    'gruppo':gruppi_italiano[2],
+    'giorno':'10',
+    'mese':'1',
+    'argomento':'Arcadia e Shrekspir',
+    'gruppo':gruppi_italiano[3],
 }
 
 storia = {
     'materia':'Storia',
-    'data':'16 Dicembre',
-    'argomento':'Capitolo 4 - Capitolo 5',
-    'gruppo':gruppi_storia[2],
+    'giorno':'13',
+    'mese':'1',
+    'argomento':'Capitolo 6 (credo)',
+    'gruppo':gruppi_italiano[1],
 }
 
 telecomunicazioni = {
     'materia':'Telecomunicazioni',
-    'data':'-',
+    'giorno':'16',
+    'mese':'12',
     'argomento':'',
     'gruppo':gruppi_telecomunicazioni[6],
 }
@@ -84,28 +72,41 @@ telecomunicazioni = {
 
 //
 
-document.getElementById('materia').innerText = italiano['materia'];
-document.getElementById('data').innerText = italiano['data'];
-document.getElementById('argomento').innerText = italiano['argomento'];
+var data = new Date()
+var pomeriggio = 0;
+if (data.getHours() > 13){pomeriggio = 1}
 
-document.getElementById('interrogati').innerText = "";
-italiano['gruppo'].forEach(alunno => {
-    document.getElementById('interrogati').innerText += "\n" + alunno;
-});
-
-
-function compilaDati(interrogati)
+// controlli: se giorno è passato 
+function compilaDati(interrogati, animazione=true)
 {
-    animazioneContainer();
-
+    if (animazione)
+        animazioneContainer();
+ 
     setTimeout(() => {
-        document.getElementById('materia').innerText = interrogati['materia'];
-        document.getElementById('data').innerText = interrogati['data'];
-        document.getElementById('argomento').innerText = interrogati['argomento'];
+        document.getElementById('argomento').innerText = "";
 
-        document.getElementById('interrogati').innerText = "";
-        interrogati['gruppo'].forEach(alunno => {
-            document.getElementById('interrogati').innerText += "\n" + alunno;
-        });
-    }, 500); 
+        if ( (data.getMonth() <= interrogati['mese']) && ( (data.getDate() == parseInt(interrogati['giorno'])  && data.getHours() > 13) || (data.getDate() > parseInt(interrogati['giorno'])) ) )
+        {
+            document.getElementById('materia').innerText = interrogati['materia'];
+            document.getElementById('data').innerText = 'Non aggiornato!';
+            document.getElementById('interrogati').innerHTML = '<h6>Dati mancanti. ' + '<br>' +'Se credi sia un problema, rompi le palle a Perry o ' + '<br>' +'a Colella.</h6>';
+        }
+        else
+        {
+            document.getElementById('materia').innerText = interrogati['materia'];
+            document.getElementById('data').innerText = interrogati['giorno'];
+            document.getElementById('data').innerText += " " + nomeMese(parseInt(interrogati['mese']) );
+            document.getElementById('argomento').innerText = interrogati['argomento'];
+
+            document.getElementById('interrogati').innerText = "";
+            interrogati['gruppo'].forEach(alunno => {
+                document.getElementById('interrogati').innerText += alunno + '\n';
+            });
+        }
+        
+    }, 250); 
 }
+
+//
+
+compilaDati(italiano, false)
