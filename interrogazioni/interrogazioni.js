@@ -47,7 +47,7 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'giorno':'10',
+    'giorno':'17',
     'mese':'1',
     'argomento':'Arcadia e Shrekspir',
     'gruppo':gruppi_italiano[3],
