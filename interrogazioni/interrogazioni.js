@@ -55,7 +55,7 @@ italiano = {
 
 storia = {
     'materia':'Storia',
-    'giorno':'13',
+    'giorno':'1',
     'mese':'1',
     'argomento':'Capitolo 6 (credo)',
     'gruppo':gruppi_italiano[1],
@@ -63,8 +63,8 @@ storia = {
 
 telecomunicazioni = {
     'materia':'Telecomunicazioni',
-    'giorno':'16',
-    'mese':'12',
+    'giorno':'1',
+    'mese':'1',
     'argomento':'',
     'gruppo':gruppi_telecomunicazioni[6],
 }
