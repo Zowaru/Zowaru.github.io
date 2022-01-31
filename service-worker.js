@@ -1,10 +1,10 @@
 // questo file viene avviato nel caso in cui l' "app" venga aperta in modalità offline
 
 // nome per istanza di cache
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v2';
 
 // lista dei file in pre-cache
-const precacheResources = ['/', '/index.html', '/stile/style.css', '/main.js', '/img/clock.png', '/interrogazioni/index.html', '/interrogazioni/interrogazioni.js'];
+const precacheResources = ['/', '/index.html', '/stile/style.css', '/main.js', '/img/clock.png', '/interrogazioni/index.html'];
 
 // mentre "installa" il sito, scarica la lista dei file nella pre-cache
 self.addEventListener('install', (event) => {
