@@ -1,7 +1,7 @@
 // questo file viene avviato nel caso in cui l' "app" venga aperta in modalità offline
 
 // nome per istanza di cache
-const cacheName = 'cache-v2';
+const cacheName = 'cache-v3';
 
 // lista dei file in pre-cache
 const precacheResources = ['/', '/index.html', '/stile/style.css', '/main.js', '/img/clock.png', '/interrogazioni/index.html'];
