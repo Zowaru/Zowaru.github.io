@@ -44,29 +44,30 @@ gruppi_telecomunicazioni = [
 
 
 // INTERROGAZIONI ----
+// Gennaio == 00 - Febbraio == 1 ...
 
 italiano = {
     'materia':'Italiano',
-    'giorno':'17',
+    'giorno':'28',
     'mese':'1',
-    'argomento':'Arcadia e Shrekspir',
-    'gruppo':gruppi_italiano[3],
+    'argomento':'Vittorio Alfieri - (?)',
+    'gruppo':gruppi_italiano[0],
 }
 
 storia = {
     'materia':'Storia',
-    'giorno':'1',
+    'giorno':'24',
     'mese':'1',
-    'argomento':'Capitolo 6 (credo)',
-    'gruppo':gruppi_italiano[1],
+    'argomento':'Forse: capp. 7 & 8',
+    'gruppo':gruppi_italiano[2],
 }
 
 telecomunicazioni = {
     'materia':'Telecomunicazioni',
-    'giorno':'1',
-    'mese':'1',
+    'giorno':'0',
+    'mese':'0',
     'argomento':'',
-    'gruppo':gruppi_telecomunicazioni[6],
+    'gruppo':gruppi_telecomunicazioni[0],
 }
 
 
@@ -95,7 +96,7 @@ function compilaDati(interrogati, animazione=true)
         {
             document.getElementById('materia').innerText = interrogati['materia'];
             document.getElementById('data').innerText = interrogati['giorno'];
-            document.getElementById('data').innerText += " " + nomeMese(parseInt(interrogati['mese']) );
+            document.getElementById('data').innerText += " " + nomeMese(parseInt(interrogati['mese'])+1 );
             document.getElementById('argomento').innerText = interrogati['argomento'];
 
             document.getElementById('interrogati').innerText = "";
