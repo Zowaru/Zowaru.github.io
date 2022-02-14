@@ -85,7 +85,7 @@ function compilaDati(interrogati, animazione=true)
     setTimeout(() => {
         document.getElementById('argomento').innerText = "";
 
-        if ( (data.getMonth() <= interrogati['mese']) && ( (data.getDate() == parseInt(interrogati['giorno'])  && data.getHours() > 13) || (data.getDate() > parseInt(interrogati['giorno'])) ) )
+        if ( ( (data.getMonth() > interrogati['mese']) && ( data.getMonth() < 7) )   ||   ( data.getDate() == parseInt(interrogati['giorno'])  && data.getHours() > 13 )    ||    (data.getDate() > parseInt(interrogati['giorno'])) )
         {
             document.getElementById('materia').innerText = interrogati['materia'];
             document.getElementById('data').innerText = 'Non aggiornato!';
