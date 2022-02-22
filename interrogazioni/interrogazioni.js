@@ -48,7 +48,7 @@ gruppi_telecomunicazioni = [
 
 italiano = {
     'materia':'Italiano',
-    'giorno':'28',
+    'giorno':'25',
     'mese':'1',
     'argomento':'Vittorio Alfieri - (?)',
     'gruppo':gruppi_italiano[0],
