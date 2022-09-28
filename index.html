@@ -40,22 +40,15 @@
 
 
             <div id="giorno" class="carte">
-                <i id="Giorno"> Caricamento... </i>
+                <span id="Giorno"> Caricamento... </span>
                 <hr>
-                <i id="Prima">  </i>
-                <br>
-                <i id="Seconda">  </i>
-                <br>
-                <i id="Terza">  </i>
-                <br>
-                <i id="Quarta">  </i>
-                <br>
-                <i id="Quinta">  </i>
-                <br>
-                <i id="Sesta">  </i>
-                <br>
-                <i id="Settima">  </i>
-                <br>
+                <p id="Prima">  </p>
+                <p id="Seconda">  </p>
+                <p id="Terza">  </p>
+                <p id="Quarta">  </p>
+                <p id="Quinta">  </p>
+                <p id="Sesta">  </p>
+                <p id="Settima">  </p>
             </div>
 
         </center>
@@ -71,56 +64,57 @@
             </center>
         </div>
         
-        <div id="linkBottoni">
+        <!-- <div id="linkBottoni">
             <label style="font-size: 0.8rem">Vedi anche le </label> 
             <a href="/interrogazioni">interrogazioni</a>
-        </div>
+        </div> -->
+        <!-- #linkBottoni r19 main.js -->
 
         <script>
             orario = {
                 'Lunedí' : {
-                    1:'Matematica',
-                    2:'Storia',
-                    3:'Italiano',
-                    4:'Inglese',
-                    5:'LAB.Tps',
-                    6:'LAB.Sistemi',
+                    1:'TPS',
+                    2:'TPS',
+                    3:'Sistemi lab.',
+                    4:'Sistemi lab.',
+                    5:'GP',
+                    6:'Sistemi',
                     7:'-',
                 },
                 'Martedí' : {
-                    1:'Matematica',
-                    2:'LAB.Sistemi',
-                    3:'LAB.Tps',
-                    4:'LAB.Informatica',
-                    5:'Religione',
-                    6:'Storia',
-                    7:'Sistemi',
+                    1:'Barratta',
+                    2:'Barratta',
+                    3:'Informatica',
+                    4:'TPS lab.',
+                    5:'TPS lab.',
+                    6:'GP lab.',
+                    7:'-',
                 },
                 'Mercoledí' : {
-                    1:'Ed.Fisica',
-                    2:'LAB.Informatica',
-                    3:'LAB.Informatica',
-                    4:'Inglese',
-                    5:'Lab.Telecomunicazioni',
-                    6:'Italiano',
+                    1:'Barratta',
+                    2:'Ed. fisica',
+                    3:'Informatica lab.',
+                    4:'Informatica lab',
+                    5:'Sistemi lab.',
+                    6:'Inglese',
                     7:'-',
                 },
                 'Giovedí' : {
-                    1:'Informatica',
-                    2:'Inglese',
-                    3:'Storia',
-                    4:'Informatica',
-                    5:'Tps',
-                    6:'Telecomunicazioni',
-                    7:'Matematica',
+                    1:'Ed. fisica',
+                    2:'Informatica lab.',
+                    3:'Informatica lab.',
+                    4:'Inglese',
+                    5:'Barratta',
+                    6:'Barratta',
+                    7:'-',
                 },
                 'Venerdí' : {
-                    1:'Matematica',
-                    2:'LAB.Telecomunicazioni',
-                    3:'Informatica',
-                    4:'Sistemi',
-                    5:'Ed.Fisica',
-                    6:'italiano',
+                    1:'Inglese',
+                    2:'Informatica',
+                    3:'GP',
+                    4:'Matematica',
+                    5:'Matematica',
+                    6:'Matematica',
                     7:' -',
                 },
             };
@@ -160,7 +154,7 @@
             // SUPPORT MORAL KIWI
         </script>
 
-        <script src="/main.js"></script>
+        <script src="main.js"></script>
 
         <script>
             var data = new Date();

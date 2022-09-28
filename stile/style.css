@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 *{    
-    font-family: 'Poppins',sans-serif; 
-    font-weight: 550;
+    font-family: 'Varela Round',sans-serif; 
+    font-weight: bold;
 }
 
 ::-webkit-scrollbar {
@@ -42,9 +43,9 @@ body > #container {
     transition: cubic-bezier(1, 0, 0, 1) 0.25s;
 }
 #container > .carte {
-    /* max-height: 14em;
-    overflow-x: scroll; */
-    margin-top: 2em;
+    position: relative;
+    top: calc(50% - 1rem);
+    transform: translateY(-50%);
 }
 
 hr {
@@ -62,12 +63,27 @@ hr {
     border-radius: 20px;
     box-shadow: black 0 0 10px -2px;
 }
+.carte > center {
+    font-size: 0.8em;
+    line-height: 1.75em;
+}
+.carte > span {
+    font-size: 1.25em;
+}
+.carte > p {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    opacity: 0.99;
+    font-size: 0.8em;
+    line-height: 1.75em;
+    font-weight: 400;
+}
 
 #orario{
     width: 3em;
 }
 #orario img {
-    height: 2.7em;
+    height: 3.375em;
     aspect-ratio: 1/1;
 }
 
@@ -83,6 +99,7 @@ hr {
     transition: 0.5s;
     z-index: 9;
     box-shadow: black 0 0 10px -4px;
+    overflow: hidden;
 
     background-color: #212121;
     border-top-left-radius: 15px;

@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator)
 
 // posizionamento iniziale componenti
 document.getElementById('contenitoreBottoni').style.bottom = '0';
-document.getElementById('linkBottoni').style.bottom = '3.1em';
+// document.getElementById('linkBottoni').style.bottom = '3.1em';
 document.getElementById('container').style.bottom = 'calc(-50% + 1rem)';
 document.getElementById('container').style.transform = 'translateY(-50%)';
 
@@ -24,7 +24,7 @@ document.getElementById('container').style.transform = 'translateY(-50%)';
 // animazione per il contenitore delle carte principali
 function animazioneContainer()
 {
-    document.getElementById('container').style.bottom = '50%';
+    document.getElementById('container').style.bottom = '100%';
     setTimeout(() => {    
         document.getElementById('container').style.bottom = 'calc(-50% + 1rem)';
     }, 250);
