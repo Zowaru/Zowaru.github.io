@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head lang="IT" translate="no">
+        <meta name="google" content="notranslate">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Zowaru#7652">
+        <meta name="author" content="Zanzigu#8380">
+        <meta name="theme-color" content="#121212">
+        <link rel="icon" href="./img/clock.ico">
+        <title>Interrogazioni</title>
+        <link rel="stylesheet" href="/stile/style.css">
+    </head>
+    <body>
+
+        <!-- contenitore principale -->
+        <center id="container">
+            <div class="carte" style="min-width: 9em;"> 
+                <center>
+                    <div style="font-weight: 600;" id="materia"></div>
+                    <div style="font-size: 0.75em;" id="data">Caricamento...</div>
+                    <div style="font-size: 0.5em;" id="argomento"></div>
+                    <hr style="margin-block-end: 0;">
+                    <div id="interrogati"></div>
+                </center>
+            </div>
+
+        </center>
+
+
+        <!-- parte inferiore: -->
+
+
+        <div id="contenitoreBottoni">
+            <center>
+                <button onclick="compilaDati(italiano)"> Italiano </button>
+                <button onclick="compilaDati(storia)"> Storia </button>
+            </center>
+        </div>
+
+        <div id="linkBottoni">
+            <label style="font-size: 0.8rem">Vedi l'</label><a href="/">orario</a>
+        </div>
+
+
+        <script src="./interrogazioni.js"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>
