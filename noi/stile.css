@@ -6,6 +6,22 @@ h1{
     color: white;
 }
 
-#noi{
-    margin-left: auto;
+/* Stile del testo */
+.ti-amo {
+    font-family: Arial, sans-serif; /* Sostituisci con il font desiderato */
+    font-size: 150px; /* Dimensione del testo */
+    color: rgb(255, 255, 255); /* Colore del testo */
+    text-align: center; /* Allineamento del testo al centro */
+    margin-top: 50px; /* Distanza dal margine superiore */
+}
+
+/* Stile dell'effetto hover */
+.ti-amo:hover {
+    color: rgb(255, 0, 47); /* Cambia il colore del testo al passaggio del mouse */
+    cursor: pointer; /* Cambia il cursore del mouse in una mano */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ombra del testo al passaggio del mouse */
+}
+
+#noi-foto{
+    max-width: 30%
 }
